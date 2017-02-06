@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="com.example.android.project1dioguardo.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bluedragon"
+        />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="\n123 Wizard Street \nPatchogue, NY 11772 \n631.555.0123" />
+
+    <!-- Stuff 1 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:paddingTop="5dp"
+        android:layout_centerInParent="true"
+        >
+
+
+        <TextView
+            android:id="@+id/stuff1"
+            android:layout_width="180dp"
+            android:paddingRight="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center"
+            android:textSize="16dp"
+            android:text="Latest D&amp;D Products Available"
+            />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft = "true"
+            android:src="@drawable/dnd"
+            />
+        </LinearLayout>
+
+    <!-- Stuff 2 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:paddingTop="100dp"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:id="@+id/stuff2"
+            android:layout_width="180dp"
+            android:paddingRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center"
+            android:textSize="16dp"
+            android:text="Magic the Gathering Cards Available Too!"
+            />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft = "true"
+            android:src="@drawable/mtg"
+            />
+
+
+    </LinearLayout>
+
+
+    <!-- Stuff 3 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:paddingTop="190dp"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:id="@+id/stuff3"
+            android:layout_width="180dp"
+            android:paddingRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center"
+            android:textSize="16dp"
+            android:text="And a Lot of Dice!"
+            />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft = "true"
+            android:src="@drawable/dice"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
